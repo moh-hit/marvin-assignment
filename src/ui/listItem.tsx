@@ -69,7 +69,7 @@ const Item: FC<Props> = ({
       <p className="text-gray-400 text-[8px]">Updated at: {updatedAt}</p>
       <div className="relative flex flex-row items-center w-20 h-10">
         {collaborators.map((collaborator, i) => {
-          const picture = collaboratorImages[i] as StaticImageData;
+          const pic = collaboratorImages[i] as StaticImageData;
 
           return (
             <div
@@ -81,7 +81,7 @@ const Item: FC<Props> = ({
               }}
             >
               <div className="relative w-8 h-8 overflow-hidden rounded-full">
-                <Image fill src={picture} alt="folder" layout="fill" />
+                <Image fill src={pic} alt="folder" layout="fill" />
               </div>
             </div>
           );
